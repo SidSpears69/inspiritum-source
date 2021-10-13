@@ -1,0 +1,43 @@
+.radio {
+    margin-bottom: 10px;
+}
+.radio:last-of-type {
+    margin-bottom: 0;
+}
+
+.label {
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 20px #0000001A;
+    border-radius: 16px;
+    height: 100%;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+.input:checked + .label {
+    border: 1px solid #EC445A;
+}
+.radio.two-columns {
+    padding: 5px;
+    width: 50%;
+    margin: 0;
+}
+.radio.two-columns .label {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 8px;
+}
+.radio.two-columns .img {
+    margin-top: 20px;
+}
+@media (min-width: 720px) {
+    .radio.two-columns {
+        padding: 10px;
+    }
+    .radio.two-columns .label {
+        font-size: 22px;
+    }
+}
