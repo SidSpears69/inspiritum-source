@@ -4,7 +4,7 @@ import Step2 from "./pages/Step2";
 import { CSSTransition } from 'react-transition-group';
 const App = () => {
   return (
-        <BrowserRouter>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
           <Route exact path="/">
           {({ match }) => (
             <CSSTransition timeout={500} classNames="fade" unmountOnExit in={match != null}>
